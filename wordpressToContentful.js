@@ -1,6 +1,6 @@
 //const execa = require('execa');
 const Listr = require('listr');
-const getPosts = require('./getPosts');
+const getPosts = require('./src/getPosts');
 
 const postsUrl = 'https://cametgaetauboutdumonde.fr/wp-json/wp/v2/posts?page=1&per_page=5&_embed=1'
 
