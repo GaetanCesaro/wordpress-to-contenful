@@ -2,6 +2,12 @@
 
 Outil de transfert d'un blog Wordpress vers Contentful
 
+## Build
+```
+npm install --save listr
+
+```
+
 ## Run
 ```
 node wordpressToContentful.js
