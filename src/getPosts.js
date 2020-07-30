@@ -1,11 +1,10 @@
-const utils = require('./utils');
 const https = require('https');
 
 module.exports = {
-    exportBlogposts: function(apiUrl) {
+    exportBlogposts: function(apiUrl, log) {
         return new Promise(resolve => {
             const exportPageOfPosts = (apiUrl, page = 1, allPosts = []) => {
-                utils.log(`Getting posts for page ${page}`)
+                //log(`Getting posts for page ${page}`)
                 const url = `${apiUrl}?page=${page}`
                 https.get(url, (res) => {
                     // When we get a 404 back we went one page over those with posts.
